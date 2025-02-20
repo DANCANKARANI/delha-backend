@@ -15,7 +15,7 @@ func main() {
 	app := fiber.New()
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:3000", // Replace with your frontend URL
+		AllowOrigins: "http://localhost:3000,https://delha-frontend.vercel.app/", // Replace with your frontend URL
 		AllowMethods: "GET,POST,HEAD,PUT,DELETE,PATCH,OPTIONS",
 		AllowHeaders: "Origin, Content-Type, Accept, Authorization",
 		AllowCredentials: true, // This must be true for cookies or authentication
